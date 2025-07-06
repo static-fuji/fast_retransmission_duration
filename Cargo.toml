@@ -1,0 +1,16 @@
+[package]
+name = "fr_duration"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "pcap_analyzer"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5.7", features = ["derive"] }
+csv = "1.3.0"
+serde = { version = "1.0.203", features = ["derive"] }
+pcap = "1.2.0"
+pnet = "0.34.0"
+anyhow = "1.0.86"
